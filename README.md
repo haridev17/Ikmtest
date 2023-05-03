@@ -3,6 +3,8 @@
 Run the following script in MSSQL Management Server
 
 Script 1
+
+```
 CREATE TABLE customers (
   id INT NOT NULL PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
@@ -23,8 +25,10 @@ CREATE TABLE products (
   name VARCHAR(255) NOT NULL,
   price DECIMAL(10, 2) NOT NULL
 );
+```
 
 Script 2
+```
 INSERT INTO customers (id, name, email, phone)
 VALUES (1, 'John Doe', 'john.doe@example.com', NULL),
        (2, 'Jane Smith', 'jane.smith@example.com', '555-1234'),
@@ -42,9 +46,11 @@ INSERT INTO products (id, name, price)
 VALUES (1, 'Product A', 10.00),
        (2, 'Product B', 20.00),
        (3, 'Product C', 30.00);
-       
+ ```
+ 
 Run the following script in PGAdmin
 
+```
 CREATE TABLE customers (
   id INTEGER NOT NULL PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
@@ -66,7 +72,7 @@ CREATE TABLE products (
   price NUMERIC(10, 2) NOT NULL
 );
 
-
+```
 #Clone the Repository 
 
 Run The following command in cmd to install dependencies
